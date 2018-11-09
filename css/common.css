@@ -1,0 +1,196 @@
+/*--------------框架----------------*/
+html {
+	font:normal normal 14px "Microsoft YaHei","sans-serif";
+	color: #333;
+}
+body,ul,ol,dl {
+	margin: 0;
+	padding: 0;
+}
+ul,ol {
+	list-style: none;
+}
+a {
+	color: #333;
+	text-decoration: none;
+}
+table{
+	border-collapse: collapse;
+}
+.inner{
+	height: 700px;
+	float: left;
+}
+.box{
+	width: 1001px;
+	height: 700px;
+	margin:0 auto;
+	border:1px solid RGB(143,148,154);
+}
+ .left{
+	width: 199px;
+	background-color: RGB(40,40,48);
+}
+.right{
+	width: 800px;
+	background-color: RGB(240,240,240);
+}
+.left_top{
+	height:40px;
+	background-color:  RGB(61,85,109);
+}
+.left_top img{
+	position: relative;
+	left: 25px;
+	top: 6px;
+}
+.left_top span{
+	color: white;
+	position: relative;
+	left: 45px;
+	bottom: 5px;
+}
+.right_tou{
+	height: 40px;
+	background-color: white;
+}
+.right_neirong{
+	width: 780px;
+	height: 650px;
+	margin: 10px 10px 0 10px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	background-color: white;
+	/*background-image: url('./images/u69.png.jpeg');*/
+} 
+.left_bottom{
+	height: 300px;
+	margin-top: 50px;
+}
+.left_bottom ul{
+	padding: 0;
+}
+.left_bottom ul li{
+	width: 199px;
+	padding: 10px;
+	color: white;
+	border-bottom: 1px solid RGB(51,51,51);
+	display: flex;
+	justify-content: space-around;
+}
+/*  right  */
+.right_tou div{
+	float: left;
+	width: 100px;
+}
+.right_tou>div:first-child{
+	height: 20px;
+	margin-left: 10px;
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-around;
+}
+.right_tou>div:last-child{
+	height: 40px;
+	position: relative;
+	left: 550px;
+	padding: 5px 0;
+}
+.right_tou>div:last-child span{
+	color: black;
+	position: relative;
+	right: 0;
+	bottom: 8px;
+}
+/*.right_neirong{
+	width: 780px;
+	height: 650px;*/
+
+/*-------------------首页-----------------------------*/
+.home{
+	width: 780px;
+	height: 650px;
+	margin: 0;
+	background-color: RGB(240,240,240);
+} 
+.bg-green{
+	background-color:#66bb0d;
+}
+.bg-white{
+	background-color: white;
+} 
+.bg-dise{
+	background-color: RGB(240,240,240);
+}
+.font-green{
+	color :#66bb0d;
+}
+.font-purple{
+	color: RGB(125,47,192);
+}
+.font-sise{
+	font-size: 8px;
+}
+.outerDiv{
+	width: 100%;
+	margin:0 auto;
+}
+.totalDiv{
+	overflow:hidden;
+	border-radius: 5px;
+	margin-top: 5px;
+	padding: 5px 0 5px 0;
+}
+.totalDiv .iconDiv,.totalDiv .numDiv{
+	float: left;
+}
+.iconDiv{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	text-align: center;
+	/*margin-left: 10px;*/
+	margin-top: 5px;
+}
+.iconDiv i{
+	line-height: 50px;
+	color:white;
+	font-size: 20px;
+}
+.totalDiv .numDiv{
+	margin: 5px 5px 5px 20px;
+}
+.numDiv span{
+	font-size: 18px;
+	line-height: 1em;
+}
+.numDiv small{
+	display: block;
+}
+#visContainer{
+	width: 100%;
+	height: 205px;
+	background-color: red;
+	margin-top: 5px;
+}
+.riDiv{
+	position: relative;
+}
+.weiZhi{
+	position: absolute;
+	top: 10px;
+	left: 20px;
+}
+#cupContainer,
+#avgContainer{
+	width: 100%;
+	height: 100px;
+	margin-top: 5px;
+}
+#salesContainer,
+#MNcontainer{
+	width: 100%;
+	height: 300px;
+	margin-top: 10px;
+	background-color: white;
+}

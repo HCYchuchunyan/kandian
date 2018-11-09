@@ -1,0 +1,226 @@
+<!-- <div class="home"> -->
+<div class="outerDiv bg-dise">
+	<div class="row">
+		<div class="col-xs-3">
+			<div class="totalDiv bg-white">
+				<div class="iconDiv bg-green">
+					<i class="iconfont icon-yun"></i>
+				</div>
+				<div class="numDiv">
+					<span>99.9%</span>
+					<small>SERVER UPTIME  </small>
+				</div>
+			</div>
+			<div class="totalDiv bg-white">
+				<div class="iconDiv bg-green">
+					<i class="iconfont icon-yun"></i>
+				</div>
+				<div class="numDiv">
+					<span>99.9%</span>
+					<small>SERVER UPTIME  </small>
+				</div>
+			</div>
+			<div class="totalDiv bg-white">
+				<div class="iconDiv bg-green">
+					<i class="iconfont icon-yun"></i>
+				</div>
+				<div class="numDiv">
+					<span>14.85%</span>
+					<small>SERVER UPTIME  </small>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="visDiv">
+				<div id="visContainer"></div>
+				<div class="numDiv weiZhi">
+					<span class="font-green">99.9%</span>
+					<small class="font-sise">SERVER</small>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="riDiv">
+				<div id="cupContainer"></div>
+			    <div class="numDiv weiZhi">
+			    	<span class="font-purple">95.8%</span>
+			    	<small class="font-sise">CDSFFVJKJNKJ</small>
+			    </div>
+			</div>
+			<div class="riDiv">
+				<div id="avgContainer"></div>
+			    <div class="numDiv weiZhi">
+			    	<span class="font-purple">32,4</span>
+			    	<small class="font-sise">CDSFFVJKJNKJ</small>
+			    </div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12">
+			<div id="salesContainer"></div>
+		</div>
+		
+	</div>
+
+</div>
+</div>
+<script>
+	$(function(){
+		var chart = Highcharts.chart('visContainer', {
+				chart:{
+					margin:[0,0,0,0],
+				},
+				credits:{
+					enabled:false,
+				},
+				colors:['#66bb0d','#cccccc'],
+				title: {
+					text: ''
+				},
+				xAxis: {
+					visible:false,
+				},
+				yAxis: {
+					visible:false,
+					title: {
+						text: ''
+					}
+				},
+				legend: {
+					floating:true,
+					layout: 'vertical',
+					align: 'right',
+					verticalAlign: 'top'
+				},
+				plotOptions: {
+					series: {
+						label: {
+							connectorAllowed: false
+						},
+						pointStart: 2010
+					}
+				},
+				series: [{
+					name: 'Page',
+					data: [43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175,24916, 24064, 29742, 29851, 32490, 30282, 38121, 40434]
+				}, {
+					name: 'Visitors',
+					data: [24916, 24064, 29742, 29851, 32490, 30282, 38121, 40434,43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175]
+				}]
+			});
+		var chart = Highcharts.chart('cupContainer',{
+	        chart: {
+	        	type: 'column',
+	        	margin:[0,0,0,],
+	        },
+	        title: {
+	        	text: ''
+	        },
+	        colors:['RGB(125,47,192)'],
+	        credits:{
+	        	enabled:false,
+	        },
+	        legend: {
+	        	floating:true,
+	        	layout: 'vertical',
+	        	align: 'right',
+	        	verticalAlign: 'top'
+	        },
+	        xAxis: {
+	        	visible:false
+	        },
+	        yAxis: {
+	        	visible:false
+	        },
+	        series: [{
+	        	name: '东京',
+	        	data: [22.4, 58.8, 38.5, 43.4, 36.0, 54.5, 15.0, 24.3, 51.2, 43.5, 36.6, 22.3]
+	        }]
+        });
+
+        var chart = Highcharts.chart('avgContainer', {
+	        // color:['green','RGB(155,219,134)','RGB(144,237,125)','RGB(106,170,85)','RGB(92,156,73)'],
+	        chart: {
+	        	spacing : [40, 0 , 40, 0],
+	        	margin:[0,0,0,60]
+	        },
+	        title:{
+	        	text:false
+	        },
+	        credits:{
+		        text:''
+	        },
+	        tooltip: {
+	        	pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+	        },
+	        plotOptions: {
+	        	pie: {
+	        		allowPointSelect: true,
+	        		cursor: 'pointer',
+	        		dataLabels: {
+	        			enabled: false,
+	        		},
+	        	}
+	        },
+	        series: [{
+	        	type: 'pie',
+	        	size:'90%',
+	        	innerSize: '60%',
+	        	name: '市场份额',
+	        	data: [
+	        		[45.0],
+	        		[26.8],
+	        		[12.8],
+	        		[18.5],
+	        		[36.2],
+	        		[20.7],
+	        		[37.6],
+	        		[41.1]
+	        	]
+	        }]
+            }, function(c) {
+            	var centerY = c.series[0].center[1],
+            		titleHeight = parseInt(c.title.styles.fontSize);
+            	c.setTitle({
+            		y:centerY + titleHeight/2
+            	});
+            });
+
+        var chart = Highcharts.chart('salesContainer', {
+        	chart: {
+        		type: 'area'
+        	},
+        	title: {
+        		text: ''
+        	},
+        	xAxis: {
+		labels:{
+			enabled:false
+		}
+        	},
+        	yAxis: {
+		labels:{
+			enabled:false
+		}
+        	},
+        	credits: {
+        		enabled: false
+        	},
+        	series: [{
+		name: '小张',
+		data: [5, 3, 4, 7, 2]
+        	}, {
+		name: '小彭',
+		data: [2, -2, -3, 2, 1]
+        	}, {
+		name: '小潘',
+		data: [3, 4, 4, -2, 5]
+        	}]
+        });
+      
+
+
+
+	});
+</script>

@@ -1,0 +1,15 @@
+$(function(){
+	$('.right_neirong').load('./pages/home.html');
+	$('li:contains(首页)').click(function(){
+	    $('.right_neirong').load('./pages/home.html');
+	});
+	$('li:contains(资讯管理)').click(function(){
+	    $('.right_neirong').load('./pages/information.html');
+	});
+	$('li:contains(栏目管理)').click(function(){
+	    $('.right_neirong').load('./pages/column.html');
+	});
+	$('li:contains(用户管理)').click(function(){
+	    $('.right_neirong').load('./pages/user.html');
+	});
+});
