@@ -1,2 +1,2 @@
-# kandian
-看点咨询
+# xinxi
+信息管理
